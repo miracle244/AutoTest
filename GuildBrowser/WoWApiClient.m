@@ -46,6 +46,7 @@ static dispatch_once_t oncePredicate;
      parameters:@{ @"fields" : @"members" }
      success:^(AFHTTPRequestOperation *operation, id responseObject) {
          
+         
          Guild *guild = [[Guild alloc] initWithGuildData:responseObject];
          successBlock(guild);
          
